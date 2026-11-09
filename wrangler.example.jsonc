@@ -1,0 +1,23 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "cuishuhe-grad-planner",
+  "main": "dist/server/index.js",
+  "compatibility_date": "2026-11-09",
+  "workers_dev": true,
+  "preview_urls": false,
+  // Copy to wrangler.jsonc, fill your new D1 database ID and Access settings.
+  // Enable Worker-level Cloudflare Access for all traffic, including workers.dev,
+  // and allow only your login before completing the Access variables below.
+  // Do not add an assets binding: all personal assets must pass the Worker.
+  "vars": {
+    "ACCESS_TEAM_DOMAIN": "https://YOUR-TEAM.cloudflareaccess.com",
+    "ACCESS_AUD": "REPLACE_WITH_ACCESS_APPLICATION_AUD",
+    "ACCESS_OWNER_EMAIL": "REPLACE_WITH_YOUR_LOGIN_EMAIL"
+  },
+  "d1_databases": [{
+    "binding": "DB",
+    "database_name": "cuishuhe-grad-planner",
+    "database_id": "REPLACE_WITH_NEW_D1_DATABASE_ID",
+    "migrations_dir": "drizzle"
+  }]
+}

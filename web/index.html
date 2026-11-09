@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#183d42">
+  <meta name="description" content="个人研究生申请规划工作台：更新背景、比较情景、查看项目条件和下一步。">
+  <title>崔书赫的升学规划</title>
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="manifest" href="./site.webmanifest">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">跳到主要内容</a>
+  <aside class="sidebar">
+    <a href="#schools" class="brand" aria-label="崔书赫的升学规划，返回项目名单"><span class="brand-mark" aria-hidden="true">崔</span><span class="brand-name">崔书赫的升学规划<small>GRADUATE PATHWAY</small></span></a>
+    <p class="sidebar-label">你的申请工作台</p>
+    <nav class="main-nav" aria-label="主要导航">
+      <button class="nav-link active" data-tab="schools" aria-selected="true"><span aria-hidden="true">▦</span> 项目名单 <b id="nav-count">152</b></button>
+      <button class="nav-link" data-tab="profile" aria-selected="false"><span aria-hidden="true">◉</span> 背景与规划</button>
+      <button class="nav-link" data-tab="portfolio" aria-selected="false"><span aria-hidden="true">▤</span> 我的经历</button>
+      <button class="nav-link" data-tab="compare" aria-selected="false"><span aria-hidden="true">⇄</span> 情景对比</button>
+    </nav>
+    <div class="sidebar-bottom">
+      <div class="private-label"><span></span> 个人工作空间</div>
+      <p>私人云端保存，支持跨设备继续。<br>离线时本机保留，也可导出备份。</p>
+      <button id="export-sidebar" class="text-button">导出我的备份 ↗</button>
+    </div>
+  </aside>
+
+  <div class="workspace">
+    <header class="topbar">
+      <div class="breadcrumb"><span class="site-name">崔书赫的升学规划</span> <span>/</span> <span id="page-label">项目名单</span></div>
+      <div class="top-actions"><span id="save-state" class="save-state" role="status">已在本机保存</span><button id="open-profile" class="button button-small button-outline">更新背景</button></div>
+    </header>
+    <main id="main-content" tabindex="-1">
+      <div id="loading" class="loading-state"><span class="loader"></span><p>正在打开你的申请工作台…</p></div>
+      <div id="fatal-error" class="error-panel" hidden></div>
+      <div id="app-content" hidden>
+        <aside id="sync-notice" class="sync-notice" role="status" hidden></aside>
+        <section class="page-header"><div><p class="eyebrow">PERSONAL APPLICATION PLANNER</p><h1 id="page-title">项目名单</h1><p id="page-description">让每一次背景更新，都有清楚的判断依据。</p></div><div class="header-note"><span>项目资料</span><strong id="data-date">2026.11.09</strong><small>保留逐项目核对日期</small></div></section>
+
+        <section class="profile-ribbon" aria-label="当前评估背景">
+          <div class="gpa-control"><label for="gpa-number">NUS GPA <span>/ 5.00</span></label><div class="gpa-number-row"><input id="gpa-number" type="number" min="2" max="5" step="0.01" value="4.10" aria-label="NUS累计GPA"><span id="gpa-descriptor">当前背景</span></div><input id="gpa-slider" type="range" min="2" max="5" step="0.01" value="4.1" aria-label="调整NUS累计GPA"><div class="slider-labels"><span>2.00</span><span>5.00</span></div></div>
+          <div class="ribbon-summary"><div class="ribbon-title">正在评估的情景 <span id="scenario-label">当前背景</span></div><p id="background-summary"></p><div class="ribbon-buttons"><button id="preset-current" class="chip-button">看 4.1 情景</button><button id="preset-target" class="chip-button">看 4.5 情景</button><button id="save-scenario" class="chip-button chip-dark">保存这个情景 ＋</button></div></div>
+          <div class="ribbon-insight"><span class="tiny-label">判断方式</span><p>官方准入、研究证据与竞争程度分别看。</p><button class="text-button" id="method-toggle" aria-expanded="false" aria-controls="method-box">了解分档依据 ↗</button></div>
+        </section>
+        <aside class="method-box" id="method-box" hidden><strong>这是可解释的规划模型，未经过录取数据校准，不输出录取概率。</strong><p>建议档位以此前逐项目判断为起点，结合 GPA 与有证据支持的背景变化调整。官方最低线、英语或先修条件单独显示；未确认的条件不会因为增加论文数量而消失。“你的分档”保留你的申请布局。背景更新不会自动更新学校政策，项目资料核对日期仍需关注。</p><p>评审侧重参考：<a href="https://cheme.mit.edu/academics/graduate-students/apply/" target="_blank" rel="noopener noreferrer">MIT 化工评审标准</a> · <a href="https://gradadmissions.stanford.edu/apply/recommendations" target="_blank" rel="noopener noreferrer">Stanford 推荐信要求</a>。规则用于规划比较，不代表这些学校认可本工具的分档。</p></aside>
+
+        <section id="tab-schools" class="tab-panel">
+          <div class="stats-grid" id="stats"></div>
+          <section class="list-workspace">
+            <div class="section-heading"><div><h2>选校总览 <span id="result-count"></span></h2><p>点击项目看变化原因、申请要求和官方来源。</p></div><div class="view-toggle"><button id="show-all" class="active">全部项目</button><button id="show-favorites">我的收藏 <span id="favorites-count">0</span></button></div></div>
+            <div class="filter-bar">
+              <label class="search-field"><span class="sr-only">搜索学校、项目、编号</span><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="搜索学校、项目或编号…" autocomplete="off"></label>
+              <label><span class="sr-only">地区</span><select id="filter-region"><option value="">全部地区</option></select></label>
+              <label><span class="sr-only">学位</span><select id="filter-degree"><option value="">全部学位</option><option value="硕士">硕士</option><option value="内地直博">内地直博</option></select></label>
+              <label><span class="sr-only">建议档位</span><select id="filter-tier"><option value="">全部建议档位</option></select></label>
+              <button id="more-filters" class="button button-outline" aria-expanded="false" aria-controls="extra-filters">更多筛选</button>
+            </div>
+            <div id="extra-filters" class="extra-filters" hidden><label><span>你的分档</span><select id="filter-user-tier"><option value="">全部</option></select></label><label><span>研究匹配</span><select id="filter-fit"><option value="">全部</option><option value="高">高</option><option value="中">中</option><option value="低">低</option></select></label><label><span>申请进度</span><select id="filter-status"><option value="">全部</option><option value="未开始">未开始</option><option value="了解中">了解中</option><option value="准备材料">准备材料</option><option value="已提交">已提交</option><option value="已获录取">已获录取</option><option value="不再申请">不再申请</option></select></label><label class="checkbox-label"><input id="filter-short" type="checkbox"> 优先展示 ≤1.5 年路线</label><button id="clear-filters" class="text-button">清除筛选</button></div>
+            <div id="program-list" class="program-grid" aria-live="polite"></div>
+            <div id="empty-state" class="empty-state" hidden><span>⌕</span><h3>没有匹配的项目</h3><p>可以减少筛选条件，或先收藏你想持续关注的项目。</p><button id="empty-clear" class="button button-outline">查看全部项目</button></div>
+            <div class="load-more-wrap"><button id="load-more" class="button button-outline">继续显示项目</button><p id="shown-count"></p></div>
+          </section>
+        </section>
+
+        <section id="tab-profile" class="tab-panel" hidden>
+          <section class="panel profile-evidence-panel"><div><h2>你的经历，已经整理在这里</h2><p id="profile-portfolio-summary"></p></div><button id="open-portfolio" class="button button-outline">查看 / 更新我的经历</button></section>
+          <div class="profile-layout"><section class="panel background-panel"><div class="section-heading"><div><h2>更新你的背景</h2><p>以已经完成、能举证的状态填写。未来目标可以另外保存为情景。</p></div></div><form id="background-form"></form><div class="profile-footnote">你的 GPA、研究和推荐信变化会即时重评。有效英语、专业先修与导师接收是独立条件。</div></section><aside class="panel planning-panel"><p class="eyebrow">NEXT STEPS</p><h2>现在最值得做什么</h2><div id="planning-insights"></div></aside></div>
+          <section class="panel credits-panel"><div class="section-heading"><div><h2>达到目标 GPA，需要怎样的后续成绩？</h2><p>只填实际计入 GPA 的学分。S/U 等不计分课程不要放入；不默认使用总毕业学分。</p></div></div><form id="credits-form" class="credits-form"><label class="field"><span>已计入 GPA 的学分</span><input name="counted" type="number" min="0" max="500" step="0.5" placeholder="例如 40，按成绩单填写"></label><label class="field"><span>后续预计计入 GPA 的学分</span><input name="remaining" type="number" min="0.5" max="500" step="0.5" placeholder="不含预计 S/U 的课程"></label><label class="field"><span>目标累计 GPA</span><input name="target" type="number" min="2" max="5" step="0.01" value="4.5"></label></form><div id="credits-result" class="credits-result">填入两项学分后，计算所需后续平均 GPA。</div></section>
+          <section class="panel tasks-panel"><div class="section-heading"><div><h2>我的行动清单</h2><p>按阶段推进，完成一项，就留下可以使用的证据。</p></div><span id="task-progress" class="task-progress"></span></div><div id="task-list"></div><form id="add-task-form" class="add-task"><label class="sr-only" for="new-task">新增行动</label><input id="new-task" placeholder="加一项自己的行动，例如：整理 FYP 研究学分证明" maxlength="160"><button class="button button-primary" type="submit">添加</button></form></section>
+          <section class="panel backup-panel"><div><h2>保存与备份</h2><p>登录后同步私人云端，离线时本机保留。备份包含经历档案、背景、情景、收藏及行动进度；导入会替换当前数据并同步。</p></div><div class="backup-buttons"><button id="export-backup" class="button button-outline">导出备份</button><button id="import-backup" class="button button-outline">导入备份</button><button id="reset-profile" class="text-button danger">恢复初始背景</button><input id="import-file" type="file" accept="application/json,.json" hidden></div></section>
+        </section>
+
+        <section id="tab-portfolio" class="tab-panel" hidden>
+          <section class="panel portfolio-panel">
+            <div class="section-heading"><div><h2>我的经历档案 <span id="portfolio-count"></span></h2><p>把已完成、进行中和待确认分别记清楚。你可以随时新增、修改或删除。</p></div><button id="portfolio-add" class="button button-primary">新增经历 ＋</button></div>
+            <div id="portfolio-summary" class="portfolio-stats"></div>
+            <div class="portfolio-toolbar"><label class="search-field"><span class="sr-only">搜索我的经历</span><span aria-hidden="true">⌕</span><input id="portfolio-search" type="search" placeholder="搜索论文、比赛、单位或推荐人…" autocomplete="off"></label><label><span class="sr-only">经历类别</span><select id="portfolio-category"><option value="">全部经历</option><option value="paper">论文</option><option value="competition">竞赛</option><option value="internship">实习</option><option value="award">奖项</option><option value="recommender">推荐人</option><option value="to-confirm">仅看待确认</option></select></label><button id="portfolio-confirmations" class="text-button">待确认 0 条</button></div>
+            <button id="jump-target-gap" class="text-button">查看目标项目缺口 ↓</button>
+            <p class="portfolio-model-note">经历档案用于说明你有哪些具体证据。若你的研究成熟度、重复实验或推荐信内容已发生变化，也请到“背景与规划”更新相应状态，模型才会按已确认能力调整档位。</p>
+            <div id="portfolio-list" class="portfolio-list" aria-live="polite"></div>
+          </section>
+          <section class="panel target-gap-panel" id="target-gap-panel"><div class="section-heading"><div><h2>我的目标，还差哪一步？</h2><p>逐项目看当前缺口、可操作的补齐目标，以及有条件的提档情景。</p></div></div><label class="field target-program-field"><span>选择目标项目（收藏优先）</span><select id="target-program"></select></label><div id="target-gap" aria-live="polite"></div></section>
+        </section>
+
+        <section id="tab-compare" class="tab-panel" hidden>
+          <section class="panel comparison-panel"><div class="section-heading"><div><h2>比较两种情景</h2><p>先看条件发生了什么变化，再看哪些项目值得调整申请投入。</p></div><button id="compare-preset" class="button button-outline">比较 4.1 与 4.5</button></div><div class="compare-selectors"><label><span>情景 A</span><select id="compare-a"></select></label><div class="compare-symbol" aria-hidden="true">⇄</div><label><span>情景 B</span><select id="compare-b"></select></label></div><div id="comparison-summary"></div><div id="comparison-differences"></div></section>
+          <section class="panel scenario-panel"><div class="section-heading"><div><h2>已保存的情景</h2><p>可保存“现在”和你有具体计划达到的背景，随时载入。</p></div><button id="save-scenario-2" class="button button-primary">保存当前情景</button></div><div id="scenario-list"></div></section>
+        </section>
+        <footer class="page-footer"><span>崔书赫的升学规划</span><p>学校政策可能更新。正式申请前，以对应项目官网与招生办公室答复为准。</p></footer>
+      </div>
+    </main>
+  </div>
+  <dialog id="portfolio-editor" class="portfolio-dialog" aria-labelledby="portfolio-editor-title">
+    <div class="dialog-heading"><div><p class="eyebrow">MY EXPERIENCE</p><h2 id="portfolio-editor-title">新增经历</h2></div><button id="portfolio-close" class="dialog-close" type="button" aria-label="关闭经历编辑">×</button></div>
+    <p class="dialog-description">保留真实成果状态和本人贡献。不确定的信息可以选择“待确认”。</p>
+    <form id="portfolio-form">
+      <div class="form-fields">
+        <label class="field"><span>经历类别</span><select name="category" required><option value="paper">论文</option><option value="competition">竞赛</option><option value="internship">实习</option><option value="award">奖项</option><option value="recommender">推荐人</option></select></label>
+        <label class="field"><span>信息确认状态</span><select name="verification" required><option value="user-confirmed">本人确认</option><option value="document">材料支持</option><option value="to-confirm">待确认</option></select></label>
+        <label class="field full-width"><span>标题 / 姓名 <span aria-hidden="true">*</span></span><input name="title" required maxlength="500" placeholder="论文题目、比赛项目、奖项或推荐人姓名"></label>
+        <label class="field"><span>期刊 / 主办方 / 单位</span><input name="organization" maxlength="300" placeholder="例如：期刊名或所在学校"></label>
+        <label class="field"><span>本人身份 / 推荐关系</span><input name="role" maxlength="250" placeholder="例如：第一作者、团队负责人、直接科研导师"></label>
+        <label class="field"><span>当前状态</span><input name="status" maxlength="160" list="portfolio-status-options" placeholder="例如：已发表、在审、等待网评、已承诺推荐"></label>
+        <label class="field"><span>日期 / 时间范围</span><input name="date" maxlength="120" placeholder="可填年月或范围；未确认的日期留空"></label>
+        <label class="field full-width"><span>与申请主线的关系</span><select name="relevance"><option value="battery-experimental">电池实验</option><option value="battery-ml">电池建模 / 机器学习</option><option value="materials">材料 / 化工</option><option value="other">其他方向</option></select></label>
+        <label class="field full-width"><span>本人贡献 / 对方了解的工作</span><textarea name="contribution" maxlength="1800" rows="3" placeholder="写清你提出、决定、完成或解释了什么；推荐人可填写其直接观察到的工作"></textarea></label>
+        <label class="field full-width"><span>可提供的证据</span><textarea name="evidence" maxlength="1800" rows="3" placeholder="例如：正式论文、接收函、比赛通知、实习证明或具体合作事例"></textarea></label>
+        <label class="field full-width"><span>资料来源</span><input name="source" maxlength="900" placeholder="例如：个人简历、证书名称或本人补充确认"></label>
+        <label class="field full-width"><span>补充说明 / 待核事项</span><textarea name="notes" maxlength="2400" rows="3" placeholder="可记录尚待确认的作者顺序、日期或推荐承诺"></textarea></label>
+      </div>
+      <p id="portfolio-editor-error" class="editor-error" role="alert" hidden></p>
+      <div class="dialog-actions"><button id="portfolio-cancel" type="button" class="button button-outline">取消</button><button type="submit" class="button button-primary">保存经历</button></div>
+    </form>
+  </dialog>
+  <datalist id="portfolio-status-options"><option value="已发表"><option value="已接受"><option value="在审"><option value="修改中"><option value="待投稿"><option value="等待网评"><option value="已完成"><option value="已获奖"><option value="正式入选，项目进行中"><option value="已承诺推荐，信件内容待落实"><option value="关系可联系，尚未确认推荐"></datalist>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

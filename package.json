@@ -1,0 +1,21 @@
+{
+  "name": "cuishuhe-grad-planner",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test:api": "node --test tests/api.test.mjs",
+    "preview": "node scripts/preview.mjs",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "jose": "^6.2.16"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "checked": "2026-11-09",
+  "primary_sources": [
+    {
+      "url": "https://cheme.mit.edu/academics/graduate-students/apply/",
+      "supports": "Core chemical-engineering fundamentals; quantitative/scientific preparation; scientific creativity and formulation of questions; leadership/teamwork; scientific communication; PhD/MSCEP do not accept GRE."
+    },
+    {
+      "url": "https://gradadmissions.stanford.edu/apply/recommendations",
+      "supports": "Three references; recommenders who know applicant well; concrete examples of intellectual independence, analytical thinking, clear expression and achievement."
+    },
+    {
+      "url": "https://mse.stanford.edu/academics-admissions/graduate-admissions",
+      "supports": "MSE masters application CV may include relevant research, publications, presentations and posters; three letters and SOP."
+    },
+    {
+      "url": "https://gradadmissions.stanford.edu/apply/statements",
+      "supports": "SOP addresses preparation, research interests, career aims and program fit; community statement can explain demonstrated values/contributions."
+    }
+  ],
+  "planning_priorities": [
+    {
+      "priority": 1,
+      "title": "保护核心课程与自学",
+      "action": "以4.5为成绩目标，同时能解释热力学、输运、动力学、电化学与表征基础。考试期不扩张无必要承诺。"
+    },
+    {
+      "priority": 2,
+      "title": "把主导电池课题转为可核查证据",
+      "action": "整理问题、你提出的判断、关键对照/重复、关键表征、被推翻假设与下一步；保留未知项。主课题独立所有权已确认，不反复质疑。"
+    },
+    {
+      "priority": 3,
+      "title": "三封互补且具体的推荐",
+      "action": "近期PI写独立科研，长期化工导师写成长与决策，第三位选最熟悉高阶课程/直接科研的人。强推承诺不等于已获接收反馈。"
+    },
+    {
+      "priority": 4,
+      "title": "整合领导与交流证据",
+      "action": "国创赛记录负责人协调企业/顾问/技术支持的真实决策和交付；网评未出不记获奖。报告、海报和组会侧重清晰说明研究及负结果。"
+    },
+    {
+      "priority": 5,
+      "title": "低频维护申请素材",
+      "action": "每月更新CV、研究摘要、5页研究展示、作者贡献与论文状态表。已接受、审稿、准备中分开，预计一区不算已发表。青年编委与秘书长按实际职责和工作记录。"
+    }
+  ],
+  "critical_engine_risks": [
+    "Only ETH M051 Process Engineering has an applicable official4.3/5 threshold; other ETH rows mention4.3 to say it must not be transferred.",
+    "MIT M0023.9 is an application-fee-waiver criterion, not an admissions minimum.",
+    "Do not identify a research route by text.includes(thesis/论文) because records can say replaces/no thesis.",
+    "UBC M106 MASc official4.0 applies; M107 MEng same central figure has unconfirmed program applicability.",
+    "Toronto honours category is not a verified NUS numeric threshold; letters/gpa planning targets are never hard gates.",
+    "First4.5/High2:14.25/Good2:14.0 distinctions must be programme-specific.",
+    "NST/NUS S/U prevents assuming all160 programme units enter cumulative GPA calculations.",
+    "Strong recommendation or contacts do not remove prerequisite, English, thesis-supervisor or RPL constraints.",
+    "Conditional short durations and policy dates remain visible when background changes.",
+    "No numeric admission probabilities; qualitative scenario model must identify uncertainty and adjustable advisory assumptions."
+  ]
+}
